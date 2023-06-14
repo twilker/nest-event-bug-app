@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { PackageModule } from 'ping-pong';
+import { PackageModule } from '../package/src/package.module';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 
 @Module({
