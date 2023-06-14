@@ -1,0 +1,19 @@
+{
+  "name": "ping-pong",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.4.3",
+    "@nestjs/event-emitter": "^1.4.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  }
+}
