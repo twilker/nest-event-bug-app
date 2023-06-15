@@ -4,6 +4,6 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 
 @Module({
   providers: [PackageService],
-  imports: [EventEmitterModule],
+  imports: [EventEmitterModule.forRoot()],
 })
 export class PackageModule {}
